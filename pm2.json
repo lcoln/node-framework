@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "script": "app.js",
+      "watch": true,
+      "name": "example.com:9000",
+      "cwd": "/Users/linteng/www/127/node-framework/",
+      "ignore_watch": ["data", "public", "package.json", ".git", ".gitignore"],
+      "exec_mode": "cluster",
+      "instances": "max",
+      "error_file": "/Users/linteng/www/127/node-framework/data/logs/error.log",
+      "min_uptime": "60s",
+      "node_args": "--harmony",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "max_memory_restart": "300M"
+    }
+  ]
+}
